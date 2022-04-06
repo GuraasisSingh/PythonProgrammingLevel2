@@ -28,6 +28,7 @@ def bs(a,x,low,high):
             return bs(a,x,mid+1,high)
         else:
             return bs(a,x,low,mid-1)
+            
 '''
 #mid=(low+high)//2
 def bs(a,x,low,high):
