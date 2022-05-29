@@ -31,7 +31,7 @@ def bs(a):
 a=[5,3,8,6,7,2]
 print("The unsorted list: ",a)
 print("The sorted list: ",bs(a))
-
+'''
 def bs(a):
     for i in range (0,len(a)-1): # iterates the list
         for j in range(len(a)-1):# list and compares two elements
@@ -57,6 +57,7 @@ def bs(a):
 a=[5,3,8,6,7,2]
 print("The unsorted list: ",a)
 print("The sorted list: ",bs(a))
+'''
 
 #1.Use the bubble sort algorithm to sort the names of ten students in ascending order and display result of each step.
 #2.Use the bubble sort algorithm to sort the numbers in ascending order using last digit of the numbers display result of each step. 
