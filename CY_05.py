@@ -34,7 +34,7 @@ print("The sorted list: ",bs(a))
 '''
 def bs(a):
     for i in range (0,len(a)-1): # iterates the list
-        for j in range(len(a)-1):# list and compares two elements
+        for j in range(0,len(a)-i-1):# list and compares two elements
             if (a[j]>a[j+1]):
                 a[j],a[j+1]=a[j+1],a[j]
     return a
