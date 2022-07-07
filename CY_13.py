@@ -40,3 +40,11 @@ print(stack)
 # Write a program to use fibonacci series using stack.
 # Write a program to insert and display five names using stack algorithm
 # Write a program to implement factorial of all numbers using stack.
+'''
+def fibo(n):
+    f=[0,1]
+    for i in range(2,n+1):
+        f.append(f[i-1]+f[i-2])
+    return f[n]
+print(fibo(3))
+'''
