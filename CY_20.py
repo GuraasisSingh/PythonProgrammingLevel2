@@ -40,7 +40,7 @@ Level of a node: The count of edges on the path from the root node to that node.
 
 Internal node: A node with at least one child is called Internal Node.
 
----Neighbour of a Node: Parent or child nodes of that node are called neighbors of that node.#To be discussed
+Neighbour of a Node: Parent or child nodes of that node are called neighbors of that node.
 
 Subtree: Any node of the tree along with its descendant.
 
@@ -51,7 +51,8 @@ Number of edges: An edge can be defined as the connection between two nodes. If 
  There is only one path from each node to any other node of the tree.
 
 Depth of a node: The depth of a node is defined as the length of the path from the root to that node. 
-Each edge adds 1 unit of length to the path. So, it can also be defined as the number of edges in the path from the root of the tree to the node.
+Each edge adds 1 unit of length to the path. So, it can also be defined as the number of edges in the path from
+ the root of the tree to the node.
 
 Height of a node: The height of a node can be defined as the length of the longest path from the node to a leaf node of the tree.
 
