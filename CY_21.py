@@ -6,6 +6,7 @@ such that there is an edge from the root of the tree to the root of each subtree
 '''
 # Function to add an edge between vertices x and y
 # Function to print the parent of each node
+#HW to revise
 def printParents(node, adj, parent):
  
     # current node is Root, thus, has no parent
@@ -13,7 +14,7 @@ def printParents(node, adj, parent):
         print(node, "->Root")
     else:
         print(node, "->", parent)
-    # Using DFS
+    # Using DFS-> Depth First search
     for cur in adj[node]:
         if (cur != parent):
             printParents(cur, adj, node)
@@ -114,20 +115,16 @@ Types of Tree data structures
 The different types of tree data structures are as follows:
 
 1. General tree
-
 A general tree data structure has no restriction on the number of nodes. It means that a parent node can have any number of child nodes.  
 
 2. Binary tree  
-
 A node of a binary tree can have a maximum of two child nodes. In the given tree diagram, node B, D, and F are left children, while E, C, and G are the right children.  
 
 3. Balanced tree
-
 If the height of the left sub-tree and the right sub-tree is equal or differs at most by 1, 
 the tree is known as a balanced tree.
 
 4. Binary search tree
-
 As the name implies, binary search trees are used for various searching and sorting algorithms.
  The examples include AVL tree and red-black tree. It is a non-linear data structure. 
  It shows that the value of the left node is less than its parent, 
