@@ -24,10 +24,3 @@ Pseudo Graph
 Euler Graph
 Hamiltonian graph
 '''
-
-'''
-To be taken up:
-Linked List->deleteNode
-Stacks-> Remove Outermost Parentheses
-Quick Sort-> Pivot and Pointer
-'''
