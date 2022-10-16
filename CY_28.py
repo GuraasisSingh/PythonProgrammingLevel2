@@ -267,7 +267,7 @@ print(df.head())'''
 # Example
 # Print the last 5 rows of the DataFrame:
 import pandas as pd
-df = pd.read_csv('auto-mpg (1).csv')
+df = pd.read_csv('data.csv')
 print(df.tail())
 
 
