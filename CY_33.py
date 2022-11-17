@@ -108,9 +108,9 @@ df = pd.DataFrame({"A":[12, 4, 5, 44, 1],
                    "D":[14, 3, 17, 2, 6]}) 
 print(df)
 '''
-'''
-# Get the first element from the following array:
 
+# Get the first element from the following array:
+'''
 import numpy as np
 
 arr = np.array([1, 2, 3, 4])
@@ -138,14 +138,15 @@ arr = np.array([1, 2, 3, 4])
 print(arr[2] + arr[3])
 
 
+
+
 # Access the element on the first row, second column:
 
 import numpy as np
 
 arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
 
-print('2nd element on 1st row: ', arr[0, 1])
-
+print('2nd element on 1st row: ', arr[0,1])
 
 
 # Access the element on the 2nd row, 5th column:
@@ -236,7 +237,33 @@ print(arr[::2])
 
 '''
 
+# import numpy as np
+# ar=np.array([1,23,4,55,7])
+# print(ar)
 
+
+'''
+
+List vs Array
+1. List contains elements of different datatype whereas array has same datatype
+2. For declaration, no module needs to be imported explicitly but it has to in array.
+3. in lists, Mathematical operations cannot be performed
+4. In lists, Several different types of elements can be nested within each other.
+5. Python lists are the best way for listing out duplicate elements in a shorter sequence.
+6. It is easier to modify (add, remove) data when it is more flexible.
+7. There is no need to loop through the list explicitly.
+8. For easier element addition, it takes up more memory.
+
+Array :
+Contains only elements of one data type.
+For module declaration, it must import explicitly
+Mathematical operations can be performed
+All the nested elements must be equal in size.
+Arrays are recommended when working with longer sequences of homogenous data
+Due to the element-based approach, there is less flexibility.
+In order to print a list of components in an array, a loop must be formed.
+Memory size is relatively smaller than the Python list.
+'''
 # You can check dimensions of array.
 
 # mean() function:
@@ -259,18 +286,51 @@ print(arr[::2])
 # Example :
 # df8.sort_values(by='distance',inplace=True)
 # df8
+'''
+import pandas as pd
+df = pd.DataFrame({
+    'col1': ['A', 'A', 'B','B' ,'D', 'C'],
+    'col2': [2, 1, 9, 8, 7, 4],
+    'col3': [0, 1, 9, 4, 2, 3],
+    'col4': ['a', 'B', 'c', 'D', 'e', 'F']
+})
+df.sort_values(by=['col1'])
+print(df)
 
+#DataFrame.sort_values(by, axis=0, ascending=True, inplace=False, kind=’quicksort’, na_position=’last’)
+import pandas as pd
+df = pd.DataFrame({
+    'col1': ['C', 'A', 'B','B' ,'D', 'A'],
+    'col2': [1, 2, 9, 8, 7, 4],
+    'col3': [0, 9, 9, 1, 2, 3],
+    'col4': ['a', 'B', 'c', 'D', 'e', 'F']
+})
+# df.sort_values(by=['col1', 'col2'])
+df.sort_values(by='col1', ascending=False)
+print(df)
+'''
+import pandas as pd
+df = pd.read_csv('data (3).csv')
+df.sort_values("Duration", axis = 0, ascending = True, inplace = True, na_position ='last')
+print(df)
+'''
+by: Single/List of column names to sort Data Frame by.
+ 
+axis: 0 or ‘index’ for rows and 1 or ‘columns’ for Column. 
 
+ascending: Boolean value which sorts Data frame in ascending order if True. 
 
+inplace: Boolean value. Makes the changes in passed data frame itself if True. 
+
+kind: String which can have three inputs(‘quicksort’, ‘mergesort’ or ‘heapsort’) of algorithm used to sort data frame. 
+
+na_position: Takes two string input ‘last’ or ‘first’ to set position of Null values. Default is ‘last’.'''
 
 # We can select rows based on multiple conditions by passing them inside the data frame as shown below.
 
 # For example, lets select all rows that are not green and which don’t belong to customer 105
 # new_df = df8[(df8['customer']!='105') & (df8['color']!='green')]
 # new_df
-
-
-
 
 # .columns will return all the names of the columns in the dataframe
 
@@ -287,17 +347,3 @@ print(arr[::2])
 
 
 
-# CUSTOM FUNCTION :
-
-# We might want to make certain changes to a certain column or the entire dataframe. To do the same set of operations, we will first define the function just like any normal python function.
-
-# To apply the function to a particular column, we use the .apply() method
-# To apply the function to the entire dataframe, we use the applymap() method
-
-# Example : 
-
-# def profit(s):
-#     return s*0.5 
-
-# # we have created a function to calculate profits, assuming a 50% markup...
-# df8['sales'].apply(profit)
