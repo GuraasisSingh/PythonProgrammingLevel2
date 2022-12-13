@@ -408,7 +408,7 @@ plt.show()
 # terrain
 # prism
 # jet
-#'''
+
 # You can include the colormap in the drawing by including the plt.colorbar() statement:
 
 # Example
@@ -444,7 +444,7 @@ plt.show()
 # plt.colorbar()
 
 # plt.show()
-
+'''
 # #Two  lines to make our compiler able to draw:
 # plt.savefig(sys.stdout.buffer)
 # sys.stdout.flush()
