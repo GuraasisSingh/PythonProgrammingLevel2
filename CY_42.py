@@ -175,34 +175,16 @@ plt.show()
 
 # The pairplot() function can also be used to showcase the subset of variables, or we can plot different types of variables on rows and columns.
 
-import seaborn as sbn  
-import matplotlib.pyplot as plt  
-# loading the dataset using the seaborn library  
-mydata = sbn.load_dataset('penguins')  
-# pairplot with the hue = gender parameter  
-sbn.pairplot(mydata, hue = 'gender')  
-# displaying the plot  
-plt.show()
-
-Parameters of Pairplot function:
-
+Parameters of Pairplot function
 # data: The data parameter accepts the data depending on the visualization to be plotted. The values can be in terms of DataFrame, Array, or List of Arrays.
-
 # hue_order, order: The hue_order or simply order parameter is the order for categorical variables utilized in the plot. The values for this parameter can be the lists of strings.
-
 # scale: The scale parameter is used for scaling the plot. This parameter takes more than values for usage, such as area, count, or width.
-
 # scale_hue: The scale_hue parameter takes the Boolean value in order to determine whether the scale is estimated within each level of the major grouping variable for TRUE or across all the violins on the plot for FALSE.
-
 # gridsize: The gridsize parameter takes the integer value to calculate the kernel density for the plot.
 # inner: The inner parameter allows the users to define the inner points of a violin plot. This parameter takes the values such as box, point, quartile, stick, or None.
 # orient: The orient parameter allows the user to determine the plot's orientation. The orientation can be either vertical, denoted by 'v' or horizontal, denoted by 'h', respectively.
-
 # linewidth: The linewidth parameter takes the float integer as its value to determine the width of the grey lines utilized within the plot.
-
 # color: The color parameter allows the user to specify the range of color for all the data elements of the plot. The value for this parameter can be matplotlib color.
-
 # palette: The palette parameter is used to define the colors utilized for each level of the plot with a variety of hues.
-
 # ax: The ax parameter is used to define the axes on which the plot will be constructed. The value for this parameter can be matplotlib Axes.
 '''
